@@ -114,6 +114,16 @@ header .mobile {
     color: white;
   }
 }
+@media only screen and (max-width: 450px){
+
+  header {
+    height: 48px;
+  }
+
+}
+
+
+
 
 /* Sign Up Section */
 
@@ -221,6 +231,7 @@ header .mobile {
 @media only screen and (max-width: 450px) {
   #sign-up-section {
     height: 20rem;
+    background-position: right;
   }
 
   #sign-up-cta h1 {
@@ -299,6 +310,19 @@ header .mobile {
   .feature {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
+  }
+}
+@media only screen and (max-width: 450px){
+  .feature h2{
+    line-height: 1.3;
+  }
+
+  .feature h3{
+    line-height: 1.4;
+
+  }
+  .feature {
+    padding: 1rem 0;
   }
 }
 
@@ -398,7 +422,7 @@ header .mobile {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
@@ -408,6 +432,9 @@ header .mobile {
     padding-top: 1rem;
     margin: auto;
   }
+}
+@media only screen and (max-width: 450px;){
+  
 }
 
 /* Footer */
