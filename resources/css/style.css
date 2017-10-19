@@ -252,8 +252,15 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
-  padding: 32px 32px 40px 32px;
-  background-size: cover;
+  image-container: hidden;
+
+}
+.feature .image-container img{
+  display: block;
+  max-width: 100%;
+}
+.feature .content{
+  padding: 2.5rem 0;
 }
 
 .feature h2 {
@@ -321,8 +328,15 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
+}
+#filters-section .images-container img{
+  display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -361,17 +375,18 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+
 }
 
 #quotes-section quote-citation {
@@ -406,10 +421,13 @@ footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+
 }
 
 footer .copyright {
   flex-grow: 1;
+  font-family: Roboto;
+  padding-left: 2rem;
 }
 
 @media only screen and (min-width: 760px) {
